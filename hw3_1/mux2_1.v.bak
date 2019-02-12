@@ -15,7 +15,7 @@ module mux2_1(InA, InB, S, Out);
 	not1 m2( .in1(n2), .out(n4));
 	not1 m3( .in1(S), .out(n1));
 	nand2 m4( .in1(n1), .in2(InB), .out(n3));
-	not1 m5( .in1(n2), .out(n5));
+	not1 m5( .in1(n3), .out(n5));
 	nor2 m6( .in1(n4), .in2(n5), .out(n6));
 	not1 m7( .in1(n6), .out(Out));
 	

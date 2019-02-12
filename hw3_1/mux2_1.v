@@ -10,7 +10,7 @@ module mux2_1(InA, InB, S, Out);
 	output  Out;
 	wire	n1, n2, n3, n4, n5, n6;
 
-	// YOUR CODE HERE
+	// Mux Logic
 	nand2 m1( .in1(S), .in2(InA), .out(n2));
 	not1 m2( .in1(n2), .out(n4));
 	not1 m3( .in1(S), .out(n1));

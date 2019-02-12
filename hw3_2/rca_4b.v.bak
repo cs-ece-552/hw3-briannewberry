@@ -16,9 +16,9 @@ module rca_4b(A, B, C_in, S, C_out);
     wire n1, n2, n3;
 
     // YOUR CODE HERE
-	fullAdder_1b m0( .A(A[0]), .B(B[0]), .C_in(C_in), .S(S[0]), .C_out(n1));
-	fullAdder_1b m1( .A(A[1]), .B(B[1]), .C_in(n1), .S(S[1]), .C_out(n2));
-	fullAdder_1b m2( .A(A[2]), .B(B[2]), .C_in(n2), .S(S[2]), .C_out(n3));
-	fullAdder_1b m3( .A(A[3]), .B(B[3]), .C_in(n3), .S(S[3]), .C_out(C_out));
+	fullAdder_1b m0( .A(A[0]), .B(B[0]), .C_in(C_in), .S(SUM[0]), .C_out(n1));
+	fullAdder_1b m1( .A(A[1]), .B(B[1]), .C_in(n1), .S(SUM[1]), .C_out(n2));
+	fullAdder_1b m2( .A(A[2]), .B(B[2]), .C_in(n2), .S(SUM[2]), .C_out(n3));
+	fullAdder_1b m3( .A(A[3]), .B(B[3]), .C_in(n3), .S(SUM[3]), .C_out(C_out));
 
 endmodule
